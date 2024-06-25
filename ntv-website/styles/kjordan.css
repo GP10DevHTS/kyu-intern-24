@@ -1,0 +1,17 @@
+html{
+    padding: 10px;
+}
+.box{
+    border: 1px solid red;
+}
+
+.box .box{
+    width: 45%;
+    float: left;
+    margin: 10px;
+    border: 1px dashed green;
+}
+
+#lst_box{
+    float:none
+}
