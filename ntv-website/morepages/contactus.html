@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTV-Contact</title>
+    <style>
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            display: inline;
+        }
+    </style>
 </head>
 
 <body >
@@ -13,15 +21,17 @@
     <nav>
         <ul>
             <li>
-                <a href="http://kyu.ac.ug" target="_blank">
-                    University Website
-                </a>
+                <a href="./../index.html">Home</a>
             </li>
             <li>
-                <a href="../index.html">Home</a>
+                <a href="./../about-us.html">about us</a>
             </li>
-            <li> <a href="../about-us.html">about us</a></li>
-            <li><a href="contactus.html">Contact</a></li>
+            <li>
+                <a href="./contactus.html">contactus</a>
+            </li>
+            <li>
+                <a href="./../comments.php">Comments</a>
+            </li>
         </ul>
     </nav>
     <div>
@@ -43,39 +53,35 @@
     </div>
     <div>
         <h1>Leave a message</h1>
-        <form>
-            <p>name</p>
-            <input type="text">
-            <p>email</p>
-            <input type="email">
-            <p>phone number</p>
-            <input type="phone">
-            <p>subject</p>
-            <input type="text">
-            <p>Message</p>
-            <textarea cols="50" rows="10"></textarea>
-            <p>
-                <input type="checkbox" name="options" value="agree">
-                <span>Do you agree to the terms</span>
-            </p>
-            <p>
-                <input type="checkbox" name="options" value="food">
-                <span>are you hungry</span>
-            </p>
-            <p>Choose a language
-            </p>
-            <p>
-                <input type="radio" name="language" id="" value="html">
-                HTML
-            </p>
-            <p>
-                <input type="radio" name="language" id="" value="c#">
-                C#(C-sharp)
-            </p>
-            <p>
-                <input type="submit" value="Save">
-            </p>
-        </form>
+       <form method="post" action="./../contactform.php">
+           <div>
+                <label for="name">Name</label>
+               <input type="text" name="user_name">
+            </div>
+
+           <div>
+                <label for="phone" >phone</label>
+               <input type="tel" name="phone">
+            </div>
+
+           <div>
+                <label for="email">email</label>
+               <input type="email" name="email">
+            </div>
+
+           <div>
+                <p for="message">message</p>
+               <textarea name="message"  cols="30" rows="10"></textarea>
+            </div>
+
+           <!-- <input type="radio" name="agreement" id=""> 
+           <label for="">do you agre</label>
+
+           <input type="radio" name="agreement" id=""> 
+           <label for="">i refuse agre</label> -->
+
+           <input type="submit">
+       </form>
     </div>
 </body>
 
