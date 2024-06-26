@@ -15,6 +15,40 @@
             property_name: property_value;
         } */
     </style>
+    <style>
+        *{
+            box-sizing: border-box;
+            color: red;
+        } 
+        #comments_link{
+            color: blue;
+        }
+        .gallery_item{
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 10px 10px 20px grey;
+            border: 3px solid black;
+        }
+        .gallery_item img{
+            width: 100%;
+        }
+        /* #first_img:hover{
+            width: 500px;
+        } */
+        .gallery_item div{
+            display: none;
+        }
+        .gallery_item:hover div{
+            display: block;
+            background-color: white;
+            /* position:absolute; */
+            bottom: 0;
+            height: 30%;
+            left: 0;
+            right: 0;
+        }
+    </style>
     <!-- /  -->
     <link href="./styles/kjordan.css" rel="stylesheet">
     <link href="./styles/kjordan.css" rel="stylesheet">
@@ -41,7 +75,7 @@
                 <a href="./morepages/contactus.html">contactus</a>
             </li>
             <li>
-                <a href="./comments.php">Comments</a>
+                <a id="comments_link" href="./comments.php">Comments</a>
             </li>
         </ul>
     </nav>
@@ -62,6 +96,43 @@
 
     https://hollymavic.rf.gd
 
+    <div class="gallery">
+        <div class="gallery_item">
+            <img id="first_img" src="./img/salad_2.jpg" alt="salad sample" >
+            <div>
+                <h3>Salad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quia. </p>
+            </div>
+        </div>
+        <div class="gallery_item">
+            <img src="./img/salad_3.jpg" alt="salad sample" >
+            <div>
+                <h3>Salad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quia. </p>
+            </div>
+        </div>
+        <div class="gallery_item">
+            <img src="./img/salad_2.jpg" alt="salad sample" >
+            <div>
+                <h3>Salad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quia. </p>
+            </div>
+        </div>
+        <div class="gallery_item">
+            <img src="./img/salad_2.jpg" alt="salad sample" >
+            <div>
+                <h3>Salad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quia. </p>
+            </div>
+        </div>
+        <div class="gallery_item">
+            <img src="./img/salad_2.jpg" alt="salad sample" >
+            <div>
+                <h3>Salad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quia. </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
