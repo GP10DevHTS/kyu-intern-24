@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(45, 151, 212);
+
+}
+
+.container{
+    padding: 100px;
+    background-color: rgb(45, 151, 212);
+}
+
+.container .form_carrier{
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    background-color: rgba(59, 83, 97, 0.726);
+    transform: translate(-50%,0);
+    display:  inline-block;
+}
+.container .form_carrier form label{
+    display: block;
+}
+input{
+    width: 100%;
+    line-height: 1.5rem;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+}
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 0;
+    width: 50%;
+}
+.btn-carrier{
+    text-align: center;
+}
+
+
+.container .form_carrier form div{
+    margin:  5px 10px;
+}
